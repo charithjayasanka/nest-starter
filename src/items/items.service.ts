@@ -8,6 +8,7 @@ export class ItemsService {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   constructor(@InjectModel('Item') private readonly itemModel: Model<Item>) {}
+
   async findAll(): Promise<Item[]> {
     return this.itemModel.find();
   }

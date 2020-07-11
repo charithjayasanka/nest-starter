@@ -1,11 +1,11 @@
 import {
+  Body,
   Controller,
+  Delete,
   Get,
+  Param,
   Post,
   Put,
-  Delete,
-  Body,
-  Param,
 } from '@nestjs/common';
 import { CreateItemDto } from './dto/create-item.dto';
 import { ItemsService } from './items.service';
@@ -34,6 +34,7 @@ export class ItemsController {
   delete(@Param('id') id: string): Promise<Item> {
     return this.itemsService.delete(id);
   }
+
   @Put(':id')
   update(
     @Body() updateItemDto: CreateItemDto,
