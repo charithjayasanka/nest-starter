@@ -25,9 +25,12 @@
     "@nestjs/platform-express": "^7.1.1",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
-    "rxjs": "^6.5.5"
+    "rxjs": "^6.5.5",
+    "@nestjs/mongoose": "^7.0.2",
+    "mongoose": "^5.9.23"
   },
   "devDependencies": {
+    "@types/mongoose": "^5.7.31",
     "@nestjs/cli": "^7.2.0",
     "@nestjs/schematics": "^7.0.0",
     "@nestjs/testing": "^7.1.1",
